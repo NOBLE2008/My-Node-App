@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete All Posts</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        input{
+            width: 100% !important;
+            max-width: 800px !important;
+        }
+        form{
+            display: flex;
+            width: 100vw;
+            justify-content: center;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex justify-content-center py-3">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/newpost" class="nav-link">Add Post</a></li>
+            <li class="nav-item"><a href="/deleteallpost" class="nav-link active" aria-current="true">Delete All Posts</a></li>
+            <li class="nav-item"><a href="/postview" class="nav-link">Post View</a></li>
+          </ul>
+        </header>
+   
+    </div>
+    <h1 style="text-align: center;">Delete all post in a click</h1>
+    <form action="/deleteallpost" method="POST">
+        <input type="submit" value="Delete All Posts" class="btn btn-danger">
+    </form>
+</body>
+</html>

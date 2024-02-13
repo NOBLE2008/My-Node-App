@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+      .postview{
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        gap: 5px; 
+        width: 80%; 
+        max-width: 874px; 
+        justify-content: flex-start;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex justify-content-center py-3">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link active" aria-current="true">Home</a></li>
+            <li class="nav-item"><a href="/newpost" class="nav-link">Add Post</a></li>
+            <li class="nav-item"><a href="/deleteallpost" class="nav-link">Delete All Posts</a></li>
+            <li class="nav-item"><a href="/postview" class="nav-link">Post View</a></li>
+          </ul>
+        </header>
+    </div>

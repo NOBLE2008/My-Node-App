@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Post</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .mb-3{
+            width: 90% !important;
+            max-width: 800px !important;
+        }
+        input, textarea{
+            width: 100% !important;
+        }
+        button{
+            width: 90% !important;
+            max-width: 800px !important;
+        }
+        #myForm{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex justify-content-center py-3">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/newpost" class="nav-link active" aria-current="true">Add Post</a></li>
+            <li class="nav-item"><a href="/deleteallpost" class="nav-link">Delete All Posts</a></li>
+            <li class="nav-item"><a href="/postview" class="nav-link">Post View</a></li>
+          </ul>
+        </header>
+    </div>
+        <form action="/created" method="POST" id="myForm">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Post Title</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="title">
+              <ul style="list-style: none;">
+                <li id="exampleInputEmail1Error">
+
+                </li>
+              </ul>
+             </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Post Content</label>
+              <textarea name="content" class="form-control" id="exampleInputPassword1" cols="30" rows="9"></textarea>
+              <ul style="list-style: none;">
+                <li id="exampleInputPassword1Error">
+
+                </li>
+              </ul>             
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form> 
+</body>
+</html>
